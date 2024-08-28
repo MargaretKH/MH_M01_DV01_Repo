@@ -13,6 +13,8 @@ namespace Photon.Pun
 {
     using System;
     using UnityEngine;
+    using UnityEngine.UI;
+    using Photon.Pun;
     using UnityEngine.Serialization;
     using System.Collections.Generic;
     using Photon.Realtime;
