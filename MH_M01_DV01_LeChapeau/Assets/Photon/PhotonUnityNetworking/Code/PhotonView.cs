@@ -13,8 +13,6 @@ namespace Photon.Pun
 {
     using System;
     using UnityEngine;
-    using UnityEngine.UI;
-    using Photon.Pun;
     using UnityEngine.Serialization;
     using System.Collections.Generic;
     using Photon.Realtime;
@@ -823,6 +821,11 @@ namespace Photon.Pun
         public override string ToString()
         {
             return string.Format("View {0}{3} on {1} {2}", this.ViewID, (this.gameObject != null) ? this.gameObject.name : "GO==null", (this.IsRoomView) ? "(scene)" : string.Empty, this.Prefix > 0 ? "lvl" + this.Prefix : "");
+        }
+
+        public void RPC(string v, object all)
+        {
+            throw new NotImplementedException();
         }
     }
 }
